@@ -9,25 +9,27 @@
 </head>
 <body>
   <header class="hero">
-    <nav class="navbar">
-      <div class="logo-container">
-  <img src="assets/logo.png" alt="Code 4 Lawn & Landscaping Logo" class="logo" />
-  <span class="company-name">Code 4 Lawn & Landscaping</span>
-</div>
-	 <div class="nav-right">
-      <ul class="nav-links">
-        <li><a href="#services">Services</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-	  <a href="#contact" class="quote-btn">Get a Quote</a>
-	  </div>
-	  <div class="mobile-menu-icon" onclick="toggleMobileMenu()">
-  <svg width="32" height="32" stroke="white" viewBox="0 0 24 24" fill="none">
-    <path d="M3 6h18M3 12h18M3 18h18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-  </svg>
-</div>
-    </nav>
+<nav class="navbar">
+  <div class="logo-container">
+    <img src="assets/logo.png" alt="Code 4 Lawn & Landscaping Logo" class="logo" />
+    <span class="company-name">Code 4 Lawn & Landscaping</span>
+  </div>
+
+  <div class="mobile-menu-icon" onclick="toggleMobileMenu()">
+    <svg width="32" height="32" stroke="white" viewBox="0 0 24 24" fill="none">
+      <path d="M3 6h18M3 12h18M3 18h18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+
+  <div class="nav-right" id="navRight">
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#contact" class="quote-btn">Get a Quote</a></li>
+    </ul>
+  </div>
+</nav>
     <div class="hero-content blur-box">
   <h1>Expert Lawn & Landscape Services</h1>
   <p>Keeping Lawns in Line, One Yard at a Time</p>
@@ -257,7 +259,7 @@
 </script>
 <script>
   function toggleMobileMenu() {
-    document.querySelector('.nav-links').classList.toggle('active');
+    document.getElementById('navRight').classList.toggle('active');
   }
 </script>
 </body>
