@@ -22,6 +22,11 @@
       </ul>
 	  <a href="#contact" class="quote-btn">Get a Quote</a>
 	  </div>
+	  <div class="mobile-menu-icon" onclick="toggleMobileMenu()">
+  <svg width="32" height="32" stroke="white" viewBox="0 0 24 24" fill="none">
+    <path d="M3 6h18M3 12h18M3 18h18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</div>
     </nav>
     <div class="hero-content blur-box">
   <h1>Expert Lawn & Landscape Services</h1>
@@ -249,6 +254,11 @@
       alert("There was a problem submitting the form. Please try again.");
     }
   });
+</script>
+<script>
+  function toggleMobileMenu() {
+    document.querySelector('.nav-links').classList.toggle('active');
+  }
 </script>
 </body>
 </html>
