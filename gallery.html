@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Code 4 Lawn & Landscaping</title>
+  <link rel="stylesheet" href="styles/gallery.css" />
+</head>
+<body>
+  <header class="gallery-hero">
+    <nav class="navbar">
+      <div class="logo-container">
+        <a href="index.html">
+          <img src="assets/logo.png" alt="Logo" class="logo" />
+        </a>
+        <span class="company-name">Code 4 Lawn & Landscaping</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#testimonials">Testimonials</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="index.html#contact" class="quote-btn">Get a Quote</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <h1 class="hero-title">Our Work Speaks for Itself</h1>
+      <p class="hero-subtitle">Browse our completed lawn and landscaping projects</p>
+    </div>
+  </header>
+  <section class="gallery-section">
+    <h2>Gallery</h2>
+    <p>Click below to view our Lawn Maintenance or Landscaping work.</p>
+
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="lawn">Lawn Maintenance</button>
+      <button class="filter-btn" data-filter="landscaping">Landscaping</button>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-item" data-category="lawn">
+        <img src="assets/lawn1.jpg" alt="Lawn work" class="gallery-image">
+      </div>
+      <div class="gallery-item" data-category="lawn">
+        <img src="assets/lawn2.jpg" alt="Lawn work" class="gallery-image">
+      </div>
+      <div class="gallery-item" data-category="lawn">
+        <img src="assets/lawn3.jpg" alt="Lawn work" class="gallery-image">
+      </div>
+      <div class="gallery-item" data-category="lawn">
+        <img src="assets/lawn4.jpg" alt="Lawn work" class="gallery-image">
+      </div>
+      <div class="gallery-item" data-category="lawn">
+        <img src="assets/lawn5.jpg" alt="Lawn work" class="gallery-image">
+      </div>
+      <div class="gallery-item" data-category="lawn">
+        <img src="assets/lawn6.jpg" alt="Lawn work" class="gallery-image">
+      </div>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <img src="assets/logo.png" alt="Code 4 Lawn & Landscaping Logo" class="footer-logo" />
+        <p>Code 4 Lawn & Landscaping</p>
+        <p>Serving your lawn with precision and care.</p>
+      </div>
+      <div class="footer-right">
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:code4.lawn.and.landscaping@gmail.com">code4.lawn.and.landscaping@gmail.com</a></p>
+        <p>Phone: <a href="tel:8166153307">(816) 615-3307</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Code 4 Lawn & Landscaping. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+    const buttons = document.querySelectorAll(".filter-btn");
+    const items = document.querySelectorAll(".gallery-item");
+
+    function filterGallery(filter) {
+      items.forEach(item => {
+        if (filter === "all" || item.getAttribute("data-category") === filter) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    }
+
+    buttons.forEach(button => {
+      button.addEventListener("click", () => {
+        document.querySelector(".filter-btn.active").classList.remove("active");
+        button.classList.add("active");
+        const filter = button.getAttribute("data-filter");
+        filterGallery(filter);
+      });
+    });
+
+    filterGallery("all");
+  </script>
+</body>
+</html>

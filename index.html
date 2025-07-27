@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Code 4 Lawn & Landscaping</title>
+  <link rel="stylesheet" href="styles/main.css" />
+<script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <header class="hero">
+    <nav class="navbar">
+      <div class="logo-container">
+  <img src="assets/logo.png" alt="Code 4 Lawn & Landscaping Logo" class="logo" />
+  <span class="company-name">Code 4 Lawn & Landscaping</span>
+</div>
+	 <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+	  <a href="#contact" class="quote-btn">Get a Quote</a>
+	  </div>
+    </nav>
+    <div class="hero-content blur-box">
+  <h1>Expert Lawn & Landscape Services</h1>
+  <p>Keeping Lawns in Line, One Yard at a Time</p>
+  <a href="#contact" class="cta-btn">Get a Free Quote Today</a>
+</div>
+<a href="#services" class="down-arrow">
+  <svg class="arrow-icon" width="64" height="64" fill="none" stroke="white" viewBox="0 0 24 24">
+    <path d="M12 5v14M19 12l-7 7-7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</a>
+<div class="hero-divider"></div>
+  </header>
+<div class="section-divider"></div>
+<section id="services" class="services-section">
+  <div class="services-header">
+    <h2>Our Services</h2>
+    <p>Professional care for your lawn and landscaping needs.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card">
+      <i data-lucide="scissors" class="service-icon"></i>
+      <h3>Lawn Maintenance</h3>
+      <img src="assets/lawn-mowing.jpg" alt="Lawn Mowing" class="service-image" />
+      <p>Precision mowing to keep your lawn crisp, healthy, and well-manicured.</p>
+    </div>
+    <div class="service-card">
+      <i data-lucide="spray-can" class="service-icon"></i>
+      <h3>Spraying</h3>
+      <img src="assets/spraying.jpg" alt="Spraying" class="service-image" />
+      <p>Weed spraying to protect and nourish your turf year-round.</p>
+    </div>
+    <div class="service-card">
+      <i data-lucide="layers" class="service-icon"></i>
+      <h3>Mulch Installation</h3>
+      <img src="assets/mulch.jpg" alt="Mulch Installation" class="service-image" />
+      <p>Clean and neat mulch installations to enhance moisture retention and curb appeal.</p>
+    </div>
+    <div class="service-card">
+      <i data-lucide="flower" class="service-icon"></i>
+      <h3>Flower Bed Installation</h3>
+      <img src="assets/flower-bed.jpg" alt="Flower Bed Installation" class="service-image" />
+      <p>Custom flower bed design and planting to make your landscape truly bloom.</p>
+    </div>
+  </div>
+</section>
+<section id="process" class="process-section">
+  <div class="process-header">
+    <h2>How It Works</h2>
+    <p>Simple steps to get your lawn looking its best.</p>
+  </div>
+  <div class="process-steps">
+    <div class="step">
+      <i data-lucide="file-text" class="step-icon"></i>
+      <h3>Request a Quote</h3>
+      <p>Fill out our quote form to schedule a free qoute.</p>
+    </div>
+    <div class="step">
+      <i data-lucide="calendar" class="step-icon"></i>
+      <h3>Schedule a Visit</h3>
+      <p>Choose a time that works for you. We will come out and give you a free qoute.</p>
+    </div>
+    <div class="step">
+      <i data-lucide="leaf" class="step-icon"></i>
+      <h3>We Do the Work</h3>
+      <p>We mow, edge, mulch, and more. You don’t lift a finger.</p>
+    </div>
+    <div class="step">
+      <i data-lucide="smile" class="step-icon"></i>
+      <h3>You Relax</h3>
+      <p>Enjoy your freshly maintained lawn and landscape.</p>
+    </div>
+  </div>
+</section>
+<div class="section-divider"></div>
+
+<section id="contact" class="estimate-section">
+  <div class="estimate-header">
+    <h2>Request a Free Qoute today!</h2>
+    <p>Interested in working together? Fill out some info and we’ll be in touch shortly. We can't wait to hear from you!</p>
+  </div>
+  <div id="estimate-form-wrapper">
+  <form id="estimate-form" action="https://formspree.io/f/xrblqvzw" method="POST">
+  <input type="hidden" name="_subject" value="New Estimate Request from Code 4 Lawn">
+<input type="hidden" name="_replyto" value="">
+    <div class="form-row two-col">
+      <div class="form-group">
+        <label for="first-name">First Name <span>(required)</span></label>
+        <input type="text" id="first-name" required>
+      </div>
+      <div class="form-group">
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone <span>(required)</span></label>
+      <input type="tel" id="phone" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email <span>(required)</span></label>
+      <input type="email" id="email" required>
+      <label class="checkbox">
+        <input type="checkbox" /> Sign up for news and updates
+      </label>
+    </div>
+
+    <div class="form-group">
+      <label for="country">Country</label>
+      <select id="country">
+        <option>United States</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="address1">Address Line 1 <span>(required)</span></label>
+      <input type="text" id="address1" required>
+    </div>
+
+    <div class="form-group">
+      <label for="address2">Address Line 2</label>
+      <input type="text" id="address2">
+    </div>
+
+    <div class="form-row three-col">
+      <div class="form-group">
+        <label for="city">City <span>(required)</span></label>
+        <input type="text" id="city" required>
+      </div>
+      <div class="form-group">
+        <label for="state">State <span>(required)</span></label>
+        <input type="text" id="state" required>
+      </div>
+      <div class="form-group">
+        <label for="zip">ZIP Code <span>(required)</span></label>
+        <input type="text" id="zip" required>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="referral">How did you hear about us?</label>
+      <input type="text" id="referral" placeholder="e.g., Social Media, Friend/Family Member, Google, etc.">
+    </div>
+
+    <div class="form-group">
+      <label>What do you want a Free Estimate on? <span>(required)</span></label>
+      <label class="checkbox"><input type="checkbox"> Lawn Maintenance</label>
+      <label class="checkbox"><input type="checkbox"> Mulch Installation</label>
+      <label class="checkbox"><input type="checkbox"> Weed Spraying</label>
+      <label class="checkbox"><input type="checkbox"> Flower Bed Installation</label>
+    </div>
+
+    <div class="form-group">
+      <label for="recurring">Would you like this to be a recurring service? <span>(required)</span></label>
+      <select id="recurring" required>
+        <option value="">Select an option</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+        <option value="not-sure">Not Sure Yet</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="budget">Estimated Budget</label>
+      <input type="text" id="budget" placeholder="Not required if unknown">
+    </div>
+
+    <div class="form-group">
+      <label for="comments">Comments</label>
+      <textarea id="comments" rows="4"></textarea>
+    </div>
+
+    <button type="submit" class="submit-btn">Submit</button>
+  </form>
+      <div id="thank-you-message" style="display: none; text-align: center; padding: 2rem;">
+      <h2 style="color: #2e7d32;">Thank you!</h2>
+      <p>We’ve received your request and will be in touch shortly.</p>
+      <a href="index.html" style="margin-top: 1rem; display: inline-block; background: #c6ff00; color: #000; padding: 0.5rem 1rem; border-radius: 6px; text-decoration: none;">Back to Home</a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-left">
+      <img src="assets/logo.png" alt="Code 4 Lawn & Landscaping Logo" class="footer-logo" />
+      <p>Code 4 Lawn & Landscaping</p>
+      <p>Serving your lawn with precision and care.</p>
+    </div>
+    <div class="footer-right">
+      <h4>Contact</h4>
+      <p>Email: <a href="mailto:code4.lawn.and.landscaping@gmail.com">code4.lawn.and.landscaping@gmail.com</a></p>
+      <p>Phone: <a href="tel:8166153307">(816) 615-3307</a></p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Code 4 Lawn & Landscaping. All rights reserved.</p>
+  </div>
+</footer>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  lucide.createIcons();
+</script>
+<script>
+  const form = document.getElementById("estimate-form");
+  const thankYou = document.getElementById("thank-you-message");
+
+  form.addEventListener("submit", async function(e) {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+
+    if (response.ok) {
+      form.style.display = 'none';
+      thankYou.style.display = 'block';
+    } else {
+      alert("There was a problem submitting the form. Please try again.");
+    }
+  });
+</script>
+</body>
+</html>
